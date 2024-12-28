@@ -15,10 +15,10 @@ app = FastAPI()
 # CORS ayarlarını her yerden erişime aç
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],  # Tüm domainlere izin verir, sadece belirli domainler için ["https://example.com"]
+    allow_credentials=True,
+    allow_methods=["*"],  # Tüm HTTP metodlarına izin verir
+    allow_headers=["*"],  # Tüm header'lara izin verir
 )
 
 @app.middleware("http")
