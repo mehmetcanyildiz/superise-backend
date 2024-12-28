@@ -92,13 +92,13 @@ class Enhancer:
         height, width, _ = image.shape
 
         # Check if either dimension exceeds 2048 pixels
-        if width > 2048 or height > 2048:
-            print("Image dimensions exceed 2048 pixels.")
-            return False
+        #if width > 2048 or height > 2048:
+        #    print("Image dimensions exceed 2048 pixels.")
+        #    return False
 
-        else:
-            print("Image dimensions are within the limit.")
-            return True
+        #else:
+        #    print("Image dimensions are within the limit.")
+        #    return True
         
 
     def enhance(self, image):
