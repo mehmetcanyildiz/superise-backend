@@ -98,7 +98,7 @@ class Enhancer:
 
         #else:
         #    print("Image dimensions are within the limit.")
-        #    return True
+        return True
         
 
     def enhance(self, image):
